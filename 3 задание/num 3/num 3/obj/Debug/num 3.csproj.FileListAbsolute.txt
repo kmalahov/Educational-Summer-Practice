@@ -10,3 +10,9 @@ I:\НИУ ВШЭ\1 Курс\Учебная практика\Решения\3 з�
 I:\НИУ ВШЭ\1 Курс\Учебная практика\Решения\3 задание\num 3\num 3\obj\Debug\num 3.csprojAssemblyReference.cache
 I:\НИУ ВШЭ\1 Курс\Учебная практика\Решения\3 задание\num 3\num 3\obj\Debug\num 3.exe
 I:\НИУ ВШЭ\1 Курс\Учебная практика\Решения\3 задание\num 3\num 3\obj\Debug\num 3.pdb
+C:\Users\virus\Documents\GitHub\Educational-Summer-Practice\3 задание\num 3\num 3\bin\Debug\num 3.exe.config
+C:\Users\virus\Documents\GitHub\Educational-Summer-Practice\3 задание\num 3\num 3\bin\Debug\num 3.exe
+C:\Users\virus\Documents\GitHub\Educational-Summer-Practice\3 задание\num 3\num 3\bin\Debug\num 3.pdb
+C:\Users\virus\Documents\GitHub\Educational-Summer-Practice\3 задание\num 3\num 3\obj\Debug\num 3.csprojAssemblyReference.cache
+C:\Users\virus\Documents\GitHub\Educational-Summer-Practice\3 задание\num 3\num 3\obj\Debug\num 3.exe
+C:\Users\virus\Documents\GitHub\Educational-Summer-Practice\3 задание\num 3\num 3\obj\Debug\num 3.pdb

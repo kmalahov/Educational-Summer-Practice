@@ -13,13 +13,13 @@ namespace num_1
 
             int n, k, d;
             LinkedList<int> s = new LinkedList<int>();
-            n = Convert.ToInt32(Console.ReadLine());
+            n = vvod();
             while (n != 0)
             {
-                k = Convert.ToInt32(Console.ReadLine());
+                k = vvod();
                 if (k < 3)
                 {
-                    d = Convert.ToInt32(Console.ReadLine());
+                    d = vvod();
                     if (k == 1)
                     {
                         s.AddFirst(d);
@@ -50,7 +50,17 @@ namespace num_1
             Console.Read();
 
         }
-
+ 
+            static int vvod()
+            {
+                int n = 0;
+                bool ok = true;
+                do
+                {
+                    ok = int.TryParse(Console.ReadLine(), out n);
+                    if (!ok) Console.WriteLine("Не вверный ввод данных. Введите еще раз: ");
+                } while (!ok);
+                return n;
+            }
     }
 }
-

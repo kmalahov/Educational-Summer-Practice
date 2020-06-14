@@ -13,7 +13,7 @@ namespace num_2
             int n;
             int count;
             Console.Write("Введите кол-во камушек: ");
-            n = Convert.ToInt32(Console.ReadLine());
+            n = vvod();
             if (n % 2 == 0)
             {
                 count = (n / 2 - 1);
@@ -22,10 +22,19 @@ namespace num_2
             {
                 count = ((n + 1) / 2 - 1);
             }
-            Console.WriteLine($"Количество взятых Вами первым ходом камушков: {count}");
-            //Console.ReadLine();
-            
+            Console.WriteLine($"Количество взятых Вами первым ходом камушков: {count}");            
             while (Console.ReadKey().Key != ConsoleKey.Escape);
+        }
+        static int vvod()
+        {
+            int n = 0;
+            bool ok = true;
+            do
+            {
+                ok = int.TryParse(Console.ReadLine(), out n);
+                if (!ok) Console.WriteLine("Не вверный ввод данных. Введите еще раз: ");
+            } while (!ok);
+            return n;
         }
     }
 }
