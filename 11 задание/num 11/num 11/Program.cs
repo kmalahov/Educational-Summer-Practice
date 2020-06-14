@@ -35,7 +35,8 @@ namespace Task11
         public static string Decrypt(string encryptedSignal)
         {
             if (encryptedSignal == null) throw new NullReferenceException();
-            if (encryptedSignal.Length < 3 || encryptedSignal.Length % 3 != 0) throw new ArgumentException("Зашифрованный сигнал должен быть кратен 3");
+            if (encryptedSignal.Length < 3 || encryptedSignal.Length % 3 != 0) 
+                throw new ArgumentException("Зашифрованный сигнал должен быть кратен 3");
 
             /*
              * StringBuilder эффективен для данного алгоритма за счет мутабельности
@@ -63,7 +64,6 @@ namespace Task11
         }
 
         /*
-         * ASCII 48 & 49
          * Метод, проверяющий, является ли переданный символ нулем или единицей
          */
         private static bool IsZeroOrOne(char ch)
