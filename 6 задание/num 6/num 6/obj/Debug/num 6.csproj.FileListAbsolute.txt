@@ -1,0 +1,6 @@
+I:\НИУ ВШЭ\1 Курс\Учебная практика\Решения\6 задание\num 6\num 6\bin\Debug\num 6.exe.config
+I:\НИУ ВШЭ\1 Курс\Учебная практика\Решения\6 задание\num 6\num 6\bin\Debug\num 6.exe
+I:\НИУ ВШЭ\1 Курс\Учебная практика\Решения\6 задание\num 6\num 6\bin\Debug\num 6.pdb
+I:\НИУ ВШЭ\1 Курс\Учебная практика\Решения\6 задание\num 6\num 6\obj\Debug\num 6.csprojAssemblyReference.cache
+I:\НИУ ВШЭ\1 Курс\Учебная практика\Решения\6 задание\num 6\num 6\obj\Debug\num 6.exe
+I:\НИУ ВШЭ\1 Курс\Учебная практика\Решения\6 задание\num 6\num 6\obj\Debug\num 6.pdb
