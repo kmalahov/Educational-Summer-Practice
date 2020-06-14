@@ -22,23 +22,7 @@ namespace num_4
 
             // Массив одночленов
             Complex[] cof = new Complex[step + 2];
-            //double x, y;
-
-            ////Ввод коэффициентов x и y
-            //do
-            //{
-            //    Console.Write("Введите коэффициент x: ");
-            //    ok = Double.TryParse(Console.ReadLine(), out x);
-            //    if (!ok)
-            //        Console.WriteLine("Требуется ввести вещественное число.");
-            //} while (!ok);
-            //do
-            //{
-            //    Console.Write("Введите коэффициент x: ");
-            //    ok = Double.TryParse(Console.ReadLine(), out y);
-            //    if (!ok)
-            //        Console.WriteLine("Требуется ввести вещественное число.");
-            //} while (!ok);
+            
             Console.Write("Введите коэффициент x: ");
             double x = vvod1();
             Console.Write("Введите коэффициент y: ");

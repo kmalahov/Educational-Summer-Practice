@@ -9,14 +9,11 @@ namespace num_5
     class Program
     {
         static void Main(string[] args)
-        {
-            Console.WriteLine("Задание №5 из книги Абрамов С.А., Гнездилова Г.Г., Капустина Е.Н., Селюн М.И. Задачи по программированию. М.: Наука, 1988.\n №692е");
-            Console.WriteLine("Дана матрица. Получить самое большое число в определенной области");
-
+        {         
             int a;
             do
             {
-                CheckInt("Введите размерность матрицы: ", out a);
+                vvod("Введите размерность матрицы: ", out a);
                 if (a < 1) Console.WriteLine("Ошибка ввода! Размер матрицы должен быть целым числом > 1");
             } while (a < 1);
             Random rand = new Random();
@@ -45,12 +42,11 @@ namespace num_5
             Console.ReadLine();
         }
 
-        static void CheckInt(string message, out int res)
+        static void vvod(string message, out int res)
         {
             bool check; // отвечает за проверку типа переменной
 
             Console.Write(message);
-
             do
             {
                 string prior = Console.ReadLine();
