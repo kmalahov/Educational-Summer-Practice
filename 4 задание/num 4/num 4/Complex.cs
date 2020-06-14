@@ -10,8 +10,8 @@ namespace num_4
     {
 
         // Вещественная и мнимая части
-        double Real;
-        double Imaginary;
+        double real;
+        double imag;
 
         // ДСЧ для генерации элементов
         static Random rnd = new Random();
@@ -19,65 +19,65 @@ namespace num_4
         // Конструкторы
         public Complex()
         {
-            Real = rnd.NextDouble() * rnd.Next(-100, 101);
-            Imaginary = rnd.NextDouble() * rnd.Next(-100, 101);
+            real = rnd.NextDouble() * rnd.Next(-100, 101);
+            imag = rnd.NextDouble() * rnd.Next(-100, 101);
         }
 
-        public Complex(double Re, double Im)
+        public Complex(double rel, double img)
         {
-            Real = Re;
-            Imaginary = Im;
+            real = rel;
+            imag = img;
         }
 
         // Свойства
-        public double Re
+        public double rel
         {
-            get { return Real; }
+            get { return real; }
         }
 
-        public double Im
+        public double img
         {
-            get { return Imaginary; }
+            get { return imag; }
         }
 
         public override string ToString()
         {
-            if (Imaginary >= 0)
-                return Real + " + " + Imaginary + "i";
-            return Real + " " + Imaginary + "i";
+            if (imag >= 0)
+                return real + " + " + imag + "i";
+            return real + " " + imag + "i";
         }
 
         public static Complex operator +(Complex a, Complex b)
         {
-            return new Complex(a.Re + b.Re, a.Im + b.Im);
+            return new Complex(a.rel + b.rel, a.img + b.img);
         }
 
         public static Complex operator -(Complex a, Complex b)
         {
-            return new Complex(a.Re - b.Re, a.Im - b.Im);
+            return new Complex(a.rel - b.rel, a.img - b.img);
         }
 
         public static Complex operator *(Complex a, Complex b)
         {
-            return new Complex(a.Re * b.Re - a.Im * b.Im, a.Im * b.Re + a.Re * b.Im);
+            return new Complex(a.rel * b.rel - a.img * b.img, a.img * b.rel + a.rel * b.img);
         }
 
         public static Complex operator /(Complex a, Complex b)
         {
-            Complex c = b.Conjugate();
-            double denominator = Math.Pow(b.Re, 2) + Math.Pow(b.Im, 2);
+            Complex c = b.connect();
+            double denom = Math.Pow(b.rel, 2) + Math.Pow(b.img, 2);
             Complex res = a * c;
-            return new Complex(res.Re / denominator, res.Im / denominator);
+            return new Complex(res.rel / denom, res.img / denom);
         }
 
         // Сопряженное
-        public Complex Conjugate()
+        public Complex connect()
         {
-            return new Complex(Re, -1 * Im);
+            return new Complex(rel, -1 * img);
         }
 
         // Возведение в степень
-        public Complex Pow(int p)
+        public Complex pow(int p)
         {
             Complex res = this;
             for (int i = 1; i < p; i++)

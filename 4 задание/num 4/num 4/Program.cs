@@ -8,26 +8,26 @@ namespace num_4
 {
     class Program
     {
-        static Complex Gorner(Complex[] Coefs)
+        static Complex Methgorner(Complex[] cof)
         {
-            Complex X = Coefs[0];
-            Complex Result = Coefs[Coefs.Length - 1];
+            Complex x = cof[0];
+            Complex res = cof[cof.Length - 1];
 
-            for (int i = Coefs.Length - 1; i > 1; i--)
-                Result = Result * X + Coefs[i - 1];
+            for (int i = cof.Length - 1; i > 1; i--)
+                res = res * x + cof[i - 1];
 
-            return Result;
+            return res;
         }
 
         static void Main(string[] args)
         {
             // Массив одночленов
-            Complex[] Array = Interface.MainMenu();
+            Complex[] arr = Interface.MainMenu();
 
             // Печать коэффициентов
-            Interface.PrintCoefs(Array);
+            Interface.PrintCoefs(arr);
 
-            Console.WriteLine("Значение многочлена при заданных значениях x и y равно {0}", Gorner(Array));
+            Console.WriteLine("Значение многочлена при заданных значениях x и y равно {0}", Methgorner(arr));
 
             Console.WriteLine("Нажмите любую клавишу...");
             Console.ReadKey();

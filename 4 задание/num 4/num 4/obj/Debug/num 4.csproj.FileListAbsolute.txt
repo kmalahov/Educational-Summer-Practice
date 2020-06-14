@@ -4,3 +4,9 @@ I:\НИУ ВШЭ\1 Курс\Учебная практика\Решения\7 з�
 I:\НИУ ВШЭ\1 Курс\Учебная практика\Решения\7 задание\num 4\num 4\obj\Debug\num 4.csprojAssemblyReference.cache
 I:\НИУ ВШЭ\1 Курс\Учебная практика\Решения\7 задание\num 4\num 4\obj\Debug\num 4.exe
 I:\НИУ ВШЭ\1 Курс\Учебная практика\Решения\7 задание\num 4\num 4\obj\Debug\num 4.pdb
+C:\Users\virus\Documents\GitHub\Educational-Summer-Practice\4 задание\num 4\num 4\bin\Debug\num 4.exe.config
+C:\Users\virus\Documents\GitHub\Educational-Summer-Practice\4 задание\num 4\num 4\bin\Debug\num 4.exe
+C:\Users\virus\Documents\GitHub\Educational-Summer-Practice\4 задание\num 4\num 4\bin\Debug\num 4.pdb
+C:\Users\virus\Documents\GitHub\Educational-Summer-Practice\4 задание\num 4\num 4\obj\Debug\num 4.csprojAssemblyReference.cache
+C:\Users\virus\Documents\GitHub\Educational-Summer-Practice\4 задание\num 4\num 4\obj\Debug\num 4.exe
+C:\Users\virus\Documents\GitHub\Educational-Summer-Practice\4 задание\num 4\num 4\obj\Debug\num 4.pdb
