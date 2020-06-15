@@ -1,10 +1,8 @@
-﻿/*
- * № 841
- * https://prnt.sc/sox0bo
- */
-
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Task11
 {
@@ -13,11 +11,11 @@ namespace Task11
         public static void Main()
         {
             Console.Write("Введите зашифрованный сигнал, состоящий из нулей и единиц, которым кратен 3: ");
-            var encryptedSignal = Console.ReadLine();
+            var encr = Console.ReadLine();
 
             try
             {
-                Console.WriteLine($"Расшифрованный сигнал: {Decrypt(encryptedSignal)}");
+                Console.WriteLine($"Расшифровка: {Decr(encr)}");
                 Console.ReadLine();
             }
             catch (ArgumentException E)
@@ -28,45 +26,35 @@ namespace Task11
             
         }
 
-        /*
-         * Метод для непосредственной дешифрофки сигнала
-         * Принимает зашифрованную сигнал, возвращает расшифрованный
-         */
-        public static string Decrypt(string encryptedSignal)
+            //дешифровка, get:зашифр, return: расшифр
+        public static string Decr(string encr)
         {
-            if (encryptedSignal == null) throw new NullReferenceException();
-            if (encryptedSignal.Length < 3 || encryptedSignal.Length % 3 != 0) 
-                throw new ArgumentException("Зашифрованный сигнал должен быть кратен 3");
+            if (encr == null) throw new NullReferenceException();
+            if (encr.Length < 3 || encr.Length % 3 != 0) 
+                throw new ArgumentException("Кратность сигнала = 3, \n Введите сигнал еще раз");
+           
+            var strbuild = new StringBuilder();
 
-            /*
-             * StringBuilder эффективен для данного алгоритма за счет мутабельности
-             */
-            var stringBuilder = new StringBuilder();
-
-            /*
-             * Каждая итерация проверяет очередную триаду в исходном сигнале
-             */
-            for (var i = 2; i < encryptedSignal.Length; i += 3)
+            for (var i = 2; i < encr.Length; i += 3)
             {
-                var number1 = encryptedSignal[i - 2];
-                var number2 = encryptedSignal[i - 1];
-                var number3 = encryptedSignal[i];
+                var n1 = encr[i - 2];
+                var n2 = encr[i - 1];
+                var n3 = encr[i];
 
-                if (!IsZeroOrOne(number1) || !IsZeroOrOne(number2) || !IsZeroOrOne(number3))
+                if (!zerorone(n1) || !zerorone(n2) || !zerorone(n3))
                 {
                     throw new ArgumentException("Сигнал должен состоять только из нулей и единиц");
                 }
 
-                stringBuilder.Append(number1 == number2 ? number1.ToString() : number3.ToString());
+                strbuild.Append(n1 == n2 ? n1.ToString() : n3.ToString());
             }
 
-            return stringBuilder.ToString();
+            return strbuild.ToString();
         }
 
-        /*
-         * Метод, проверяющий, является ли переданный символ нулем или единицей
-         */
-        private static bool IsZeroOrOne(char ch)
+        
+         //Проверка на 0 и 1
+        private static bool zerorone(char ch)
         {
             return ch == 48 || ch == 49;
         }

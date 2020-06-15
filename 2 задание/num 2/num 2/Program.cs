@@ -12,7 +12,7 @@ namespace num_2
         {
             int n;
             int count;
-            Console.Write("Введите кол-во камушек: ");
+            Console.Write("Введите кол-во камешек: ");
             n = vvod();
             if (n % 2 == 0)
             {
